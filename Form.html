@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      
+        <!--для поддержки разных разрешений-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!--добавляем файл со стилем--> 
+       <link rel="stylesheet" href="formStyle.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+       <script src="https://kit.fontawesome.com/9cce39bfd6.js" crossorigin="anonymous"></script>
+       <style type="text/css">
+         .contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(238, 35, 35);
+    border: 1px solid rgb(238, 35, 35);
+    padding: 12px 20px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: rgb(238, 35, 35);
+    color: white;
+}
+       </style>
+     </head>
+    <div class="contact-col">
+        <form action="form-handler.php" method="post">
+          <label class="lab">Ваше имя:</label><input type="text" name="name" required pattern="^[a-zA-Z]+$" required>
+          <label class="lab">Email:</label><input type="email" name="email" required>
+          <label class="lab">Какую задачу нужно решить?</label><textarea rows="8" name="message" maxlength="140" required></textarea>
+          <button class="btn" type="submit" class="button">Оставить заявку</button>
+        </form>
+
+      </div>
+</html>

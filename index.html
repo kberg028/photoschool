@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <!--для поддержки разных разрешений-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ACL</title>
+   <!--добавляем файл со стилем--> 
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/9cce39bfd6.js" crossorigin="anonymous"></script>
+ </head>
+ <body>
+
+   <section class="header">
+     <nav>
+       <a href="index.html"><img src="img/logo.svg" width="120px" height="120px"></a>
+       <div class="nav-links" id="navLinks">
+        <i class="far fa-times-circle" onclick="hideMenu()"></i>
+         <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="course.html">COURSE</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+         </ul>
+       </div>
+       <i class="fas fa-ellipsis-h" onclick="showMenu()"></i>
+     </nav>
+
+     <div class="text-box">
+       <h1>ACL</h1>
+       <h2>School of Photography</h2>
+       <p>Photography is demonstrably the most contemporary of art forms. 
+        <br>It is the most vital, effective, and universal means of<br> 
+        communication of facts and ideas between peoples and nations.</p>
+        <h3>CORNELL CAPA<br>Photographer</h3>
+     </div>
+   </section>
+
+    <!--- Acion ---->
+    <section class="action">
+      <h1>Have any questions?</h1>
+      <a href="contact.html" class="button">CONTACT US</a>
+    </section>
+
+    <!--- Footer ---->
+    <section class="footer">
+      <h4>Follow</h4>
+      <div class="icons">
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-instagram"></i>
+        <p>2021 Dnipro Tech University</p>
+      </div>
+    </section>
+
+
+
+
+<!---JavaScript for Toggle Menu---->
+   <script>
+     var navLinks = document.getElementById("navLinks");
+
+     function showMenu(){
+       navLinks.style.right = "0";
+     }
+     function hideMenu(){
+       navLinks.style.right = "-200px";
+     }
+
+   </script>
+ </body> 
+</html>

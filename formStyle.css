@@ -1,0 +1,24 @@
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(238, 35, 35);
+    border: 1px solid rgb(238, 35, 35);
+    padding: 12px 20px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: rgb(238, 35, 35);
+    color: white;
+}
